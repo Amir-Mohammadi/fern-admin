@@ -1,0 +1,20 @@
+.container {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+
+  .message {
+    color: #ffffff;
+    margin-top: 25px;
+    margin-right: 13px;
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 94px;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: #d3d3d3;
+  justify-content: center;
+  margin: 10px;
+
+  .header {
+    border-bottom: 1px solid #dedede;
+  }
+
+  table {
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      tr {
+        th {
+          font-size: 11px;
+          padding: 10px;
+          font-weight: 200;
+          color: #707070;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    tbody {
+      font-size: 16px;
+      font-weight: 300;
+      tr {
+        justify-content: space-around;
+        align-items: center;
+
+        td {
+          padding: 5px;
+          color: #707070;
+          text-align: center;
+          div {
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    flex: none;
+    border-radius: 18px;
+    border: none;
+    height: 35px;
+    width: 82px;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    .text {
+      font-size: 12px;
+      font-family: IRANSans;
+      font-weight: 200;
+    }
+  }
+  span {
+    font-size: 11px;
+    font-family: IRANSans;
+    font-weight: 200;
+  }
+  button:focus {
+    outline: 0;
+  }
+}
+.green {
+  background-color: #009289;
+}
+.red {
+  background-color: #db0060;
+}

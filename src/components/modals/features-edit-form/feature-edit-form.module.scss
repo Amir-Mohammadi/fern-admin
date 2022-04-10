@@ -1,0 +1,38 @@
+.container {
+  flex-direction: column;
+  width: 650px;
+  .row {
+    flex: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+
+    .feature {
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 18px;
+      .subFeature {
+        margin-top: 14px;
+        flex-direction: column;
+        padding: 0 30px;
+      }
+
+      .featureItem {
+        margin-top: 5px;
+        flex: none;
+        width: 420px;
+      }
+    }
+
+    .typeSelector {
+      flex: none;
+      width: 150px;
+      height: 40px;
+      padding: 0 5px;
+    }
+
+    .valueList {
+      flex-direction: column;
+    }
+  }
+}

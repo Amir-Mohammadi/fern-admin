@@ -1,0 +1,124 @@
+.container {
+  padding: 21px 39px;
+  background-color: #f6f6f6;
+  flex-direction: column;
+  .addCategoryButtonBX {
+    flex: none;
+    margin-bottom: 12px;
+  }
+  .box {
+    flex-direction: column;
+    flex: none;
+    padding-bottom: 75px;
+
+    .row {
+      justify-content: space-between;
+      margin-bottom: 14px;
+
+      .subFeatureOptions {
+        flex: none;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+          align-items: center;
+          font-size: 12px;
+        }
+      }
+
+      .feature {
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 18px;
+        .subFeature {
+          margin-top: 14px;
+          padding: 0 30px;
+        }
+      }
+      .inputGroup {
+        flex-direction: column;
+        padding-left: 20.5px;
+        padding-right: 20.5px;
+        span {
+          font-size: 11px;
+          color: #707070;
+          font-weight: 200;
+        }
+
+        input {
+          border: 1px solid #d3d3d3;
+          height: 35px;
+          border-radius: 18px;
+          background-color: #ffffff;
+          margin-top: 5px;
+          outline: none;
+          padding: 0 10px;
+          font-family: inherit;
+        }
+
+        .textBox {
+          background-color: #ffffff;
+          border-radius: 18px;
+          margin-top: 5px;
+          min-height: 145px;
+        }
+
+        .addBX {
+          align-items: flex-end;
+          justify-content: flex-end;
+          button {
+            height: 33px;
+            width: 121px;
+            border-radius: 18px;
+            background-color: #009289;
+            color: #ffffff;
+            font-family: inherit;
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .inputGroup:first-child {
+        padding-right: 0;
+      }
+
+      .inputGroup:last-child {
+        padding-left: 0;
+      }
+
+      .valueList {
+        span {
+          font-size: 11px;
+          color: #707070;
+          font-weight: 200;
+        }
+        flex-direction: column;
+      }
+
+      .buttonGroup {
+        flex: none;
+        width: 255px;
+        justify-content: space-between;
+        align-items: flex-end;
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+        }
+
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+}

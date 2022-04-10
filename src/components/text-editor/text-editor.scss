@@ -1,0 +1,20 @@
+.container {
+  div {
+    display: block;
+    direction: ltr;
+    flex: none;
+  }
+
+  .ck-editor {
+    flex: 1;
+    height: 500px !important;
+
+    .ck-editor__main {
+      height: 100%;
+
+      .ck-content {
+        height: 100%;
+      }
+    }
+  }
+}

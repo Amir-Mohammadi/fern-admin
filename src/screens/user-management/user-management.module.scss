@@ -1,0 +1,43 @@
+.tabContainer {
+  flex-direction: column;
+
+  .newUserFormBX {
+    margin-top: 14px;
+    width: 1363px;
+  }
+
+  .dataSetFormBX {
+    width: 1363px;
+    min-height: 422px;
+    background-color: grey;
+    margin-top: 16px;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: #ffffff;
+
+    .dataSet {
+      margin-top: -17px;
+    }
+  }
+
+  .addProductFormBX {
+    max-width: 395px;
+    height: 114px;
+    margin-top: 38px;
+    margin-bottom: 9px;
+  }
+
+  .verticalTab {
+    flex-direction: column;
+    margin-top: 12.5px;
+    .sellerInfoFormBx {
+  float: right;
+      margin-top: 17px;
+      justify-content: flex-start;
+      flex-direction: column;
+      
+    }
+
+  }
+
+}

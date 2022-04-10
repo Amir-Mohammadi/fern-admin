@@ -1,0 +1,49 @@
+.container {
+  flex-direction: column;
+
+  .labelBox {
+    align-items: center;
+    justify-content: start;
+    font-size: 16;
+    font-weight: lighter;
+    color: #707070;
+    padding-bottom: 14px;
+  }
+
+  // ul {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: start;
+  //   align-items: center;
+  //   list-style-type: none;
+  //   color: #707070;
+  //   margin: 0;
+  //   padding: 0;
+
+    li {
+      cursor: pointer;
+      flex: none;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 300;
+      margin-left: 20px;
+      align-items: center;
+
+      .radioButton {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        border: 1px solid #d3d3d3;
+      }
+
+      span {
+        padding: 0 7px;
+      }
+    // }
+  }
+}
+
+.selected {
+  background-color: #009289;
+}

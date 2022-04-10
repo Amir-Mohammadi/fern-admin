@@ -1,0 +1,65 @@
+.container {
+  width: 1000px;
+  font-size: 12px;
+  font-weight: 200;
+  flex-direction: column;
+  .body {
+    width: 100%;
+    border-radius: 0 0 13px 13px;
+    flex-direction: column;
+    padding-right: 17px;
+    padding-left: 17px;
+    table,
+    td,
+    th {
+      border: 1px solid #d3d3d3;
+    }
+    table {
+      border-spacing: 0px 10px;
+      border-collapse: collapse;
+      thead {
+        background-color: #f2f2f2;
+        margin-top: 10px;
+        th {
+          height: 28px;
+          font-weight: 200;
+        }
+      }
+      tbody {
+        background-color: transparent;
+        tr {
+          border-bottom: 1px solid #d3d3d3;
+        }
+        td {
+          height: 30px;
+          .itemContainer {
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: row;
+            .buttonItem {
+              align-items: center;
+              justify-content: center;
+              flex: none;
+              background-color: #009289;
+              padding: 4px;
+              padding-left: 8px;
+              padding-right: 8px;
+              border-radius: 18px;
+              .buttonItemTitle {
+                font-size: 8px;
+                padding-right: 5px;
+                color: #ffffff;
+              }
+            }
+            .textItem {
+              align-items: center;
+              justify-content: center;
+              flex: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

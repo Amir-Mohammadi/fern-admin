@@ -1,0 +1,140 @@
+.container {
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 15px;
+
+  .categoryContainer {
+    padding: 14px 32px;
+    padding-bottom: 40px;
+
+    .inputGroup {
+      flex-direction: column;
+      padding-left: 23px;
+      span {
+        font-size: 11px;
+        color: #707070;
+        font-weight: 200;
+      }
+
+      input {
+        border: 1px solid #d3d3d3;
+        height: 35px;
+        border-radius: 18px;
+        background-color: #ffffff;
+        margin-top: 5px;
+        outline: none;
+        padding: 0 10px;
+      }
+    }
+
+    .buttonGroup {
+      flex: none;
+      width: 255px;
+      justify-content: space-between;
+      align-items: flex-end;
+      button {
+        width: 122px;
+        height: 35px;
+        border-radius: 18px;
+        font-family: inherit;
+        font-size: 15px;
+        color: #ffffff;
+        border: none;
+        outline: none;
+      }
+
+      .danger {
+        background-color: #db0060;
+      }
+
+      .success {
+        background-color: #009289;
+      }
+    }
+  }
+
+  .listContainer {
+    flex-direction: column;
+    padding: 14px 20px;
+  }
+
+  .logoContainer {
+    flex-direction: column;
+    padding: 14px 32px;
+    padding-bottom: 68px;
+    .row {
+      padding-bottom: 14px;
+      .inputGroup {
+        flex-direction: column;
+        padding-left: 23px;
+        span {
+          font-size: 11px;
+          color: #707070;
+          font-weight: 200;
+        }
+
+        input {
+          border: 1px solid #d3d3d3;
+          height: 35px;
+          border-radius: 18px;
+          background-color: #ffffff;
+          margin-top: 5px;
+          outline: none;
+          padding: 0 10px;
+          flex: auto;
+        }
+
+        [type='file'] {
+          height: 0;
+          overflow: hidden;
+          max-width: 50px;
+          border: none;
+          background-color: #ffffff;
+          margin-top: 0;
+          outline: none;
+          padding: 0;
+        }
+
+        [type='file'] + label {
+          display: flex;
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          background-color: #009289;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5px;
+        }
+      }
+      .buttonGroup {
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 20px;
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          margin-left: 23px;
+        }
+
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+}

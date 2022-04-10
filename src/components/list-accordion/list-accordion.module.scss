@@ -1,0 +1,19 @@
+.container {
+  flex-direction: column;
+
+  // max-width: 661px;
+
+  .list {
+    flex-direction: column;
+
+    // background-color: #E0F7FA;
+
+    .item {
+      background-color: #e0f7fa;
+      flex: none;
+    }
+    .item:nth-child(even) {
+      background-color: #eefdff;
+    }
+  }
+}

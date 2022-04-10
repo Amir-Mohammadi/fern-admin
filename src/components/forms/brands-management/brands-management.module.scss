@@ -1,0 +1,169 @@
+.container {
+  padding: 21px 39px;
+  background-color: #f6f6f6;
+  flex-direction: column;
+
+  .box {
+    flex-direction: column;
+    flex: none;
+    padding-bottom: 75px;
+
+    .row {
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex: none;
+      .imageContainer {
+        flex: none;
+        border-radius: 20px;
+        border: 0;
+        width: 200px;
+        height: 200px;
+
+        [type='file'] {
+          height: 0;
+          overflow: hidden;
+          max-width: 0px;
+          border: none;
+          background-color: #ffffff;
+          margin-top: 0;
+          outline: none;
+          padding: 0;
+        }
+
+        [type='file'] + label {
+          display: flex;
+          width: 200px;
+          height: 200px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          background-color: #009289;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5px;
+        }
+
+        .image {
+          border-radius: 20px;
+          border: 0;
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+        }
+        .hiddenImage {
+          display: none;
+        }
+        .hiddenInput {
+          display: none;
+        }
+      }
+
+      .imageContainer:hover {
+        position: relative;
+        flex: none;
+        border-radius: 20px;
+        border: 0;
+        width: 200px;
+        height: 200px;
+
+        [type='file'] {
+          height: 0;
+          overflow: hidden;
+          max-width: 0px;
+          border: none;
+          background-color: #ffffff;
+          margin-top: 0;
+          outline: none;
+          padding: 0;
+        }
+
+        [type='file'] + label {
+          position: absolute;
+          display: flex;
+          width: 200px;
+          height: 200px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          background-color: #009289;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5px;
+        }
+
+        .image {
+          border-radius: 20px;
+          border: 0;
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+        }
+        .hiddenImage {
+          display: none;
+        }
+        .hiddenInput {
+          display: flex;
+        }
+      }
+
+      .imageInfo {
+        flex-direction: column;
+        .inputGroup {
+          flex: none;
+          width: 380px;
+        }
+      }
+
+      .inputGroup {
+        flex-direction: column;
+        padding-left: 20.5px;
+        padding-right: 20.5px;
+        span {
+          font-size: 11px;
+          color: #707070;
+          font-weight: 200;
+        }
+        input {
+          border: 1px solid #d3d3d3;
+          font-family: inherit;
+          height: 35px;
+          border-radius: 18px;
+          background-color: #ffffff;
+          margin-top: 5px;
+          outline: none;
+          padding: 0 10px;
+        }
+      }
+
+      .buttonGroup {
+        flex: none;
+        width: 255px;
+        justify-content: space-between;
+        align-items: flex-end;
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+        }
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+}

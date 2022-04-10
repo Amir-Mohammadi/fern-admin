@@ -1,0 +1,10 @@
+.container {
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 15px;
+
+  .listContainer {
+    flex-direction: column;
+    padding: 14px 20px;
+  }
+}

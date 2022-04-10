@@ -1,0 +1,52 @@
+.container {
+  flex-direction: column;
+
+  .tabContainer {
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 12px;
+    padding: 11px 19px;
+    justify-content: space-between;
+    .column {
+      flex: none;
+      flex-direction: column;
+      width: 648px;
+
+      .box {
+        flex: none;
+        margin: 15px 0;
+      }
+
+      .couponBX {
+        flex-direction: column;
+        background-color: #eefdff;
+        padding: 11px;
+
+        .couponFR {
+          min-height: 114px;
+          background-color: #ffffff;
+          margin-bottom: 13px;
+        }
+
+        .couponLS {
+          padding: 10px;
+          background-color: #ffffff;
+          flex-direction: column;
+          border-radius: 11px;
+          box-shadow: 0 3px 6px 1px #00000019;
+
+          label {
+            font-size: 14px;
+            font-weight: 200;
+            color: #707070;
+          }
+        }
+      }
+
+      .rangeBox {
+        background-color: #d3d3d3;
+        padding: 12px 11px;
+      }
+    }
+  }
+}

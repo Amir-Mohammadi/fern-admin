@@ -1,0 +1,20 @@
+.container {
+  height: 64px;
+  flex-direction: row;
+
+  justify-content: center;
+
+  .contain {
+    justify-content: flex-start;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, transparent, #aaaaaa);
+  }
+
+  .text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+}

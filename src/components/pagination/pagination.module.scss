@@ -1,0 +1,51 @@
+.container {
+  flex-direction: row-reverse;
+
+  .pagination {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+
+    .defaults {
+      padding: 0 !important;
+      margin: 0 !important;
+      min-width: 0 !important;
+    }
+
+    .selected {
+      background-color: #009289;
+      border-radius: 15px;
+      a {
+        color: #ffffff !important;
+        cursor: default;
+      }
+    }
+
+    li {
+      display: flex;
+      min-width: 15px;
+      justify-content: center;
+      align-items: center;
+      a {
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        outline: none !important;
+        font-weight: normal;
+        font-size: 13px;
+        color: #707070;
+        margin: 1px 3px 0 3px;
+        height: 15px;
+      }
+    }
+  }
+
+  .arrows {
+    color: #707070;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}

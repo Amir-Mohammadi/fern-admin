@@ -1,0 +1,77 @@
+.container {
+  background-color: #f6f6f6;
+  height: 73px;
+  margin-bottom: 8px;
+  padding: 4px;
+  border: 1px solid #d3d3d3;
+  border-radius: 18px;
+
+  .avatarBX {
+    flex: none;
+    position: relative;
+    background-color: #ffffff;
+    width: 63px;
+    height: 63px;
+    border: 1px solid #d3d3d3;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+
+    .avatar {
+      flex: none;
+      background-color: #f2f2f2;
+      width: 52px;
+      height: 52px;
+      border-radius: 30px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    .badge {
+      flex: none;
+      position: absolute;
+      bottom: 1px;
+      right: 1px;
+      width: 7px;
+      height: 7px;
+      border-radius: 5px;
+      background-color: #009289;
+    }
+  }
+
+  .descBX {
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: space-around;
+
+    .titleBX {
+      color: #707070;
+      justify-content: flex-start;
+      align-items: center;
+      .title {
+        flex: none;
+        font-size: 11px;
+        font-weight: bold;
+      }
+
+      span {
+        margin-right: 10px;
+        font-size: 11px;
+        font-weight: 300;
+      }
+    }
+
+    .desc {
+      align-items: center;
+      color: #707070;
+      font-size: 11px;
+      align-items: center;
+    }
+  }
+}

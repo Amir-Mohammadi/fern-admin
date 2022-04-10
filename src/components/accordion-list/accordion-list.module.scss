@@ -1,0 +1,56 @@
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-direction: column;
+  border-color: #707070;
+  height: fit-content;
+
+  .bottom {
+    flex-direction: column;
+    min-height: 54px;
+    flex-direction: column;
+    border-radius: 30px;
+    .accordionItem {
+      flex-direction: column;
+      flex: none;
+      .accordion {
+        margin-top: 1px;
+        display: flex;
+        flex-direction: row;
+        max-height: 54px;
+        background-color: #009289;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: lighter;
+        min-height: 54px;
+        outline: none;
+        border: #707070;
+        align-items: center;
+        justify-content: flex-end;
+        color: #ffffff;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-size: 16px;
+          font-weight: lighter;
+          color: #ffffff;
+          margin-right: 35px;
+        }
+
+        .icon {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-left: 32px;
+          align-items: center;
+        }
+      }
+    }
+
+    .panel {
+      flex: none;
+    }
+  }
+}

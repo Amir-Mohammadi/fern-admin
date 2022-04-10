@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  //   max-width: 1049px;
+  .mainTable {
+    thead {
+      background-color: #d3d3d3;
+
+      & > tr {
+        height: 38px;
+
+        & th {
+          justify-content: space-around;
+
+          font-size: 12px;
+          font-weight: lighter;
+          color: #707070;
+          font-family: IranSans;
+          width: 12%;
+        }
+
+        & > .middleHead {
+          span {
+            margin-right: 50px;
+            margin-left: 62px;
+          }
+        }
+        & > .emptyPart {
+          width: 161px;
+        }
+      }
+    }
+
+    tbody {
+      //   background-color: #eefdff;
+
+      .firstColumn {
+        font-size: 10px;
+        font-weight: lighter;
+        color: #006862;
+        font-family: IranSans;
+      }
+
+      tr {
+        background-color: #e0f7fa;
+        & > td {
+          font-size: 10px;
+          font-weight: lighter;
+          color: #707070;
+          height: 38px;
+          padding-right: 18px;
+          font-family: IranSans;
+        }
+
+        .dateButton {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .editButton {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 60px;
+            height: 20px;
+            outline: none;
+            border: none;
+            border-radius: 18px;
+            background-color: #000000;
+            box-shadow: 0px 3px 15px 0px rgba(112, 112, 112, 0.39);
+
+            span {
+              font-size: 8px;
+              font-weight: 300;
+              color: #ffffff;
+
+              font-family: IranSans;
+            }
+          }
+        }
+      }
+      tr:nth-child(odd) {
+        background-color: #eefdff;
+      }
+    }
+  }
+}
+
+.renderPage {
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    max-height: 92px;
+    span {
+      margin-right: 51px;
+      margin-top: 4px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      max-width: 830px;
+      min-height: 47px;
+      margin-right: 22px;
+
+      margin-bottom: 21px;
+      border: 1px solid #d3d3d3;
+      border-radius: 13px;
+      outline: none;
+      padding-right: 13px;
+      color: #707070;
+      font-size: 10px;
+      font-weight: 200;
+      font-family: IranSans;
+    }
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+
+    button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 93px;
+      min-height: 20px;
+      border-radius: 18px;
+      border: none;
+      outline: none;
+      margin-bottom: 10px;
+      margin-right: 15px;
+      margin-top: 7px;
+    }
+
+    span {
+      color: #ffffff;
+      font-size: 7px;
+      font-weight: 400;
+      font-family: IranSans;
+    }
+
+    .acceptButton {
+      background-color: #009289;
+      box-shadow: 0px 3px 15px 0px rgba(0, 146, 137, 0.39);
+    }
+
+    .deniedButton {
+      background-color: #db0060;
+      box-shadow: 0px 3px 15px 0px rgba(219, 0, 96, 0.39);
+    }
+  }
+}

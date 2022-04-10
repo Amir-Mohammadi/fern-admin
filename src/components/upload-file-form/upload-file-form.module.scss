@@ -1,0 +1,172 @@
+.container {
+  .imageForm {
+    flex-direction: column;
+
+    .tagForm {
+      flex-direction: column;
+      
+    }
+
+    .imageList {
+      flex-wrap: wrap;
+      .imageItem {
+        flex: none;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 1px solid #d3d3d3;
+        overflow: hidden;
+        .imageHover {
+          display: none;
+        }
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .imageItem:hover {
+        .imageHover {
+          position: absolute;
+          display: flex;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #3d3d3d88;
+          backdrop-filter: blur(3px);
+
+          button {
+            height: fit-content;
+            width: fit-content;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 8px;
+          }
+        }
+      }
+
+      .selectedImage {
+        border: 2px solid #db0060;
+      }
+    }
+
+    .row {
+      justify-content: space-between;
+      margin-bottom: 14px;
+      flex: none;
+      .inputGroup {
+        flex-direction: column;
+        padding-left: 20.5px;
+        padding-right: 20.5px;
+        .inputLabel {
+          flex: none;
+          justify-content: space-between;
+        }
+        span {
+          font-size: 11px;
+          color: #707070;
+          font-weight: 200;
+        }
+
+        input {
+          border: 1px solid #d3d3d3;
+          height: 35px;
+          border-radius: 18px;
+          background-color: #ffffff;
+          margin-top: 5px;
+          outline: none;
+          padding: 0 10px;
+          font-family: inherit;
+        }
+
+        .dangerInput{
+          border: 1px solid #db0060;
+        }
+
+        .textBox {
+          background-color: #ffffff;
+          border-radius: 18px;
+          margin-top: 5px;
+          min-height: 145px;
+        }
+
+        label {
+          color: #db0060;
+          font-size: 12px;
+        }
+      }
+
+      .inputGroup:first-child {
+        padding-right: 0;
+      }
+
+      .inputGroup:last-child {
+        padding-left: 0;
+      }
+
+      .buttonGroup {
+        flex: none;
+        width: 255px;
+        justify-content: space-between;
+        margin-top: 22px;
+        button {
+          width: 122px;
+          height: 35px;
+          border-radius: 18px;
+          font-family: inherit;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+        }
+        .danger {
+          background-color: #db0060;
+        }
+
+        .success {
+          background-color: #009289;
+        }
+      }
+    }
+  }
+
+  .uploadBox {
+    [type='file'] {
+      height: 0;
+      overflow: hidden;
+      max-width: 0px;
+      border: none;
+      background-color: #ffffff;
+      margin-top: 0;
+      outline: none;
+      padding: 0;
+    }
+    [type='file'] + label {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: 350px;
+      border-radius: 18px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 300;
+      color: #d3d3d3;
+      border: 3px dashed #d3d3d3;
+      outline: none;
+      background-color: #fafafa;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 20px;
+      .bgText {
+        margin-top: 15px;
+        font-weight: normal;
+        color: #707070;
+      }
+    }
+  }
+}

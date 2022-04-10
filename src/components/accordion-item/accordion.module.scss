@@ -1,0 +1,32 @@
+
+
+
+.container {
+    flex-direction: column;
+  
+    .header {
+      height: 38px;
+      // background-color: #e0f7fa;
+      flex-direction: row;
+      font-size: 16px;
+      font-weight: lighter;
+      color: #006862;
+      justify-content: flex-start;
+  
+      span {
+        margin: 6px 11px;
+      }
+  
+      .shift {
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 22px;
+      }
+    }
+  }
+  
+  .select {
+    flex-direction: column;
+  }
+  
+  

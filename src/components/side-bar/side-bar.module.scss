@@ -1,0 +1,92 @@
+.container {
+  flex: none;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: #ffffff;
+  width: 260px;
+  height: fit-content;
+
+  .userInfoBox {
+    flex: none;
+    height: 92px;
+    padding: 0px 0px;
+    margin: 0 10px;
+    border-bottom: 2px solid #d3d3d3;
+
+    .userInfoInnerBox {
+      padding: 15px 10px;
+      align-items: flex-end;
+      .avatar {
+        flex: none;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: flex-end;
+        height: 52px;
+        margin: 10px;
+      }
+
+      .userInfoText {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 10px;
+
+        .name {
+          color: #000000;
+          font-size: 13px;
+          font-weight: normal;
+        }
+
+        .email {
+          color: #707070;
+          font-size: 10px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  .itemsBox {
+    flex: none;
+    flex-direction: column;
+    margin-top: 34px;
+    padding: 0 13px;
+    align-items: center;
+
+    .singleItem {
+      display: flex;
+      min-height: 34px;
+      margin-bottom: 25px;
+      width: 228px;
+      margin-right: 6px;
+      flex-direction: row;
+      border-radius: 30px;
+      color: #707070;
+      align-items: center;
+      padding: 0 15px;
+      font-size: 16px;
+      font-weight: 300;
+
+      .itemIcon {
+        flex: none;
+        width: 27px;
+        justify-content: center;
+      }
+
+      span {
+        padding-right: 19px;
+      }
+    }
+  }
+}
+
+.selected {
+  background-color: #e0f7fa;
+
+  span {
+    padding-right: 19px;
+    color: #009289;
+  }
+}

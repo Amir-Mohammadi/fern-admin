@@ -1,0 +1,27 @@
+.container {
+  flex: none;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  border-radius: 18px;
+  margin: 5px;
+  button {
+    border-radius: 15px;
+    width: 26px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: #db0060;
+    opacity: 0;
+    transition: 0.3s;
+    margin: 1px;
+  }
+  span {
+    padding: 0 10px;
+  }
+}
+
+.container:hover {
+  button {
+    opacity: 1;
+  }
+}

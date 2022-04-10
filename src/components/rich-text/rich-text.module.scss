@@ -1,0 +1,44 @@
+.container {
+  flex-direction: column;
+
+  .actionBar {
+    direction: ltr;
+    padding: 35px;
+    .action {
+      flex: none;
+      background-color: red;
+      height: fit-content;
+      margin: 0 10px;
+      position: relative;
+
+      .hyperlinkBX {
+        position: absolute;
+        flex-direction: column;
+        top: 32px;
+        left: -10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: 1px solid #009289;
+        padding: 30px 15px;
+        z-index: 5;
+        .form {
+          padding-bottom: 10px;
+        }
+      }
+      button {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .editor {
+    display: block;
+    border: solid 1px #ccc;
+    padding: 20px;
+    min-height: 200px;
+  }
+  .editable {
+    width: 800px;
+  }
+}

@@ -1,0 +1,84 @@
+.container {
+  flex-direction: column;
+  background-color: #eefdff;
+  border-radius: 10px;
+  padding: 12px;
+
+  .cardHD {
+    flex: none;
+    justify-content: space-between;
+    padding: 18px 0;
+    align-items: center;
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      color: #4d4f5c;
+      margin-right: 55px;
+    }
+
+    .dateRangeBX {
+      flex: none;
+
+      span {
+        display: flex;
+        width: 44px;
+        height: 32px;
+        font-size: 14px;
+        background-color: #ffffff;
+        border: 1px solid #d7dae2;
+        color: #43425d;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.04);
+      }
+
+      .selected {
+        background-color: #009289;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .tolerance {
+    justify-content: flex-end;
+    flex: none;
+    padding: 0 5px;
+
+    .percent {
+      flex: none;
+      align-items: center;
+      margin: 0 27px;
+      span {
+        font-size: 16px;
+        font-weight: 300;
+
+        direction: ltr;
+      }
+
+      .positive {
+        color: #009289;
+      }
+
+      .negative {
+        color: #db0060;
+      }
+    }
+
+    .value {
+      flex: none;
+      align-items: center;
+
+      label {
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
+  }
+}

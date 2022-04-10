@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #707070;
+    height: 114px;
+    width: 100%;   
+    color: #ffffff;
+    align-content: space-around;
+    font-size: 20px;
+    align-items:center;
+    margin-right: 1px;
+    padding: 0 145px;
+    .firstText{  
+        flex: none;  
+    }
+    .secondText{ 
+        justify-content: center;
+        min-width: 621px;     
+    }
+    .logo{
+        flex: none;      
+    }
+  }
+  

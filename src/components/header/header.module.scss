@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  height: 173px;
+  align-content: space-around;
+  border-color: #707070;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+  span {
+    font-size: 17px;
+    color: #000000;
+    min-width: 125px;
+    margin-right: 10px;
+  }
+  .headerLeftSide {
+    flex: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 173px;
+    padding-right:210px;
+    .languageAndExit {
+      height: 173px;
+      min-width: 203px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      flex: none;
+      padding-right: 52px;
+    }
+    .secondLogo {
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      justify-content: center;
+      align-items: center;
+      min-height: 67px;
+      min-width: 67px;
+      flex: none;
+    }
+  }
+  .headerRightSide {
+    display: flex;
+    height: 173px;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    flex: none;
+    .headerLogo {
+      width: 204px;
+      height: 88px;
+    }
+    .searchStyle {
+      padding-right: 76px;
+      .headerSearch {
+        border-width: 0px;
+        border-radius: 100px;
+        background-color: #f2f2f2;
+        height: 64px;
+        display: flex;
+        flex: 1;
+        font-size: 20px;
+        padding: 0 20px;
+        align-items: center;
+        min-width: 649px;
+        max-width: 649px;
+
+        input {
+          display: flex;
+          flex: 1;
+          border-width: 0px;
+          background-color: transparent;
+          height: 100%;
+          font-family: IRANSans;
+          font-size: 20px;
+          font-weight: 200;
+          color: #707070;
+        }
+
+        input:focus {
+          display: flex;
+          flex: 1;
+          border-width: 0px;
+          background-color: transparent;
+          height: 100%;
+          font-family: inherit;
+          font-size: 20px;
+          outline: none;
+          font-weight: 200;
+          color: #707070;
+        }
+      }
+    }
+  }
+  .mybuttons {
+    min-width: '195px';
+  }
+}

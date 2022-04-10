@@ -1,0 +1,130 @@
+.colorForm {
+  flex-direction: column;
+  .rowColor {
+    margin-bottom: 14px;
+    flex: none;
+  }
+
+  .row {
+    justify-content: space-between;
+    margin-bottom: 14px;
+    flex: none;
+
+    .inputGroup {
+      flex-direction: column;
+      padding-left: 20.5px;
+      padding-right: 20.5px;
+      .inputLabel {
+        flex: none;
+        justify-content: space-between;
+      }
+      span {
+        font-size: 11px;
+        color: #707070;
+        font-weight: 200;
+      }
+      textarea {
+        height: 100px;
+        outline: none;
+        resize: none;
+        border-radius: 18px;
+        border: 1px solid #d3d3d3;
+        padding: 10px;
+        font-family: inherit;
+      }
+      [type='file'] {
+        height: 0;
+        overflow: hidden;
+        max-width: 0px;
+        border: none;
+        background-color: #ffffff;
+        margin-top: 0;
+        outline: none;
+        padding: 0;
+      }
+      [type='file'] + label {
+        display: flex;
+        width: 122px;
+        height: 35px;
+        border-radius: 18px;
+        font-family: inherit;
+        font-size: 15px;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        background-color: #009289;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+      }
+
+      input {
+        border: 1px solid #d3d3d3;
+        height: 35px;
+        border-radius: 18px;
+        background-color: #ffffff;
+        margin-top: 5px;
+        outline: none;
+        padding: 0 10px;
+        font-family: inherit;
+      }
+
+      .textBox {
+        background-color: #ffffff;
+        border-radius: 18px;
+        margin-top: 5px;
+        min-height: 145px;
+      }
+      .tagForm {
+        flex-direction: column;
+        .tagList {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    .inputGroup:first-child {
+      padding-right: 0;
+    }
+
+    .inputGroup:last-child {
+      padding-left: 0;
+    }
+
+    .linkBtn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      height: fit-content;
+      color: #24afff;
+      font-family: inherit;
+      border-bottom: 1px solid #24afff;
+    }
+    .buttonGroup {
+      flex: none;
+      width: 255px;
+      justify-content: space-between;
+      align-items: flex-end;
+      button {
+        width: 122px;
+        height: 35px;
+        border-radius: 18px;
+        font-family: inherit;
+        font-size: 15px;
+        color: #ffffff;
+        border: none;
+        outline: none;
+      }
+      .danger {
+        background-color: #db0060;
+      }
+
+      .success {
+        background-color: #009289;
+      }
+      .cancel {
+        background-color: gray;
+      }
+    }
+  }
+}
